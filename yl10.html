@@ -13,14 +13,63 @@
 </head>
 <body>
     <!-- Joonas 13.11.25 -->
+    <!-- Tere Mario :D 27.11.25 -->
+    <!-- HTML on väga lahe ;) 27.11.25 -->
     <h1>ÕPILASE REGISTREERIMISVORM</h1>
     <form action="#" method="get">
-            <fieldset>
+            <fieldset style="width:400px">
                 <legend>Isikuandmed</legend>
-                <label for="fname">Eesnimi</label>
+                <label for="fname">Eesnimi</label><br>
                 <input type="text" id="fname" required placeholder="nt Joonas" maxlength="24">
+                <br>
+                <label for="fname">Perenimi</label><br>
+                <input type="text" id="fname" required placeholder="nt Teller" maxlength="24">
+                <br>
+                <label for="fname">Sünnikuupäev</label><br>
+                <input type="date" id="fname" required placeholder="" maxlength="30">
+                <br>
+                <label for="fname">Sugu</label><br>
+                <input type="radio" name="tuba" value="Mees"> Mees
+                <input type="radio" name="tuba" value="Naine" checked> Naine
+                <br>
             </fieldset>
 
+            <fieldset style="width:400px">
+                <legend>Kontakt</legend>
+                <label for="fname">E-post</label><br>
+                <input type="text" id="fname" required placeholder="nt nimi@kool.com" maxlength="100">
+                <br>
+                <label for="fname">Mobiil</label><br>
+                <input type="text" id="fname" required placeholder="+372 51234567" maxlength="15">
+                <br>
+                <label for="fname">Aadress</label><br>
+                <textarea name="aadress" id="aadress" placeholder="Tänav, maja, korter"></textarea>
+                <br>
+                <label for="fname">Linn / Asula</label><br>
+                <input type="text" id="fname" required placeholder="nt Hiiumaa" maxlength="30">
+                <br>
+                <label for="fname">Postiindeks</label><br>
+                <input type="text" id="fname" required placeholder="nt 10111" maxlength="5">
+                <br>
+                <label for="Riik">Riik:</label><br>
+                <input type="text" id="Riik" name="Riik" value="Eesti" readonly><br>
+                <small>(Muutmatu väli)</small>
+            </fieldset>
+            <fieldset style="width:400px">
+                <legend>Muu info</legend>
+                <label for="Riik">Huvialad</label><br>
+                <input type="checkbox" name="Joonistamine"> Joonistamine
+                <input type="checkbox" name="Laulmine"> Laulmine
+                <input type="checkbox" name="Tantsimine"> Tantsimine
+                <input type="checkbox" name="Kokkamine"> Kokkamine <br>
+                <input type="checkbox" name="Muu:"> Muu:
+                <input type="text" id="fname" required placeholder="täpsusta (kuni 30 märki)" maxlength="30">
+                <br>
+                <br><label for="Riik">Isiklik veebileht</label><br>
+                <input type="text" id="fname" required placeholder="https://minuleht.ee" maxlength="50">
+                <br>
+                <small>(peab algama http:// või https://)</small>
+            </fieldset>
     </form>
 </body>
 </html>
